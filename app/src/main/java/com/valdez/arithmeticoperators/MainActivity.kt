@@ -50,7 +50,7 @@ class MainActivity : ComponentActivity() {
     @SuppressLint("SetTextI18n")
     private fun add(firstNumber: String, secondNumber: String) {
         try {
-            val result = (firstNumber.toInt() + secondNumber.toInt()).toString()
+            val result = (firstNumber.toDouble() + secondNumber.toDouble()).toString()
             tvResult.text = result
         } catch (error: NumberFormatException) {
             tvResult.text = "Error: Invalid number format."
@@ -63,7 +63,7 @@ class MainActivity : ComponentActivity() {
     @SuppressLint("SetTextI18n")
     private fun subtract(firstNumber: String, secondNumber: String) {
         try {
-            val result = (firstNumber.toInt() - secondNumber.toInt()).toString()
+            val result = (firstNumber.toDouble() - secondNumber.toDouble()).toString()
             tvResult.text = result
         } catch (error: NumberFormatException) {
             tvResult.text = "Error: Invalid number format."
@@ -76,7 +76,7 @@ class MainActivity : ComponentActivity() {
     @SuppressLint("SetTextI18n")
     private fun multiply(firstNumber: String, secondNumber: String) {
         try {
-            val result = (firstNumber.toInt() * secondNumber.toInt()).toString()
+            val result = (firstNumber.toDouble() * secondNumber.toDouble()).toString()
             tvResult.text = result
         } catch (error: NumberFormatException) {
             tvResult.text = "Error: Invalid number format."
@@ -89,7 +89,7 @@ class MainActivity : ComponentActivity() {
     @SuppressLint("SetTextI18n")
     private fun divide(firstNumber: String, secondNumber: String) {
         try {
-            val result = (firstNumber.toInt() / secondNumber.toInt()).toString()
+            val result = (firstNumber.toDouble() / secondNumber.toDouble()).toString()
             tvResult.text = result
         } catch (error: NumberFormatException) {
             tvResult.text = "Error: Invalid number format."
