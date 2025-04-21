@@ -1,5 +1,6 @@
 package com.valdez.arithmeticoperators
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -28,5 +29,73 @@ class MainActivity : ComponentActivity() {
         btnSubtract = findViewById(R.id.btn_subtract)
         btnMultiply = findViewById(R.id.btn_multiply)
         btnDivide = findViewById(R.id.btn_divide)
+
+        btnAdd.setOnClickListener {
+            add(etFirstNumber.text.toString(), etSecondNumber.text.toString())
+        }
+
+        btnSubtract.setOnClickListener {
+            subtract(etFirstNumber.text.toString(), etSecondNumber.text.toString())
+        }
+
+        btnMultiply.setOnClickListener {
+            multiply(etFirstNumber.text.toString(), etSecondNumber.text.toString())
+        }
+
+        btnDivide.setOnClickListener {
+            divide(etFirstNumber.text.toString(), etSecondNumber.text.toString())
+        }
+    }
+
+    @SuppressLint("SetTextI18n")
+    private fun add(firstNumber: String, secondNumber: String) {
+        try {
+            val result = (firstNumber.toInt() + secondNumber.toInt()).toString()
+            tvResult.text = result
+        } catch (error: NumberFormatException) {
+            tvResult.text = "Error: Invalid number format."
+        } catch (error: Exception) {
+            tvResult.text = "An unexpected error occurred."
+            println("Unexpected error: $error")
+        }
+    }
+
+    @SuppressLint("SetTextI18n")
+    private fun subtract(firstNumber: String, secondNumber: String) {
+        try {
+            val result = (firstNumber.toInt() - secondNumber.toInt()).toString()
+            tvResult.text = result
+        } catch (error: NumberFormatException) {
+            tvResult.text = "Error: Invalid number format."
+        } catch (error: Exception) {
+            tvResult.text = "An unexpected error occurred."
+            println("Unexpected error: $error")
+        }
+    }
+
+    @SuppressLint("SetTextI18n")
+    private fun multiply(firstNumber: String, secondNumber: String) {
+        try {
+            val result = (firstNumber.toInt() * secondNumber.toInt()).toString()
+            tvResult.text = result
+        } catch (error: NumberFormatException) {
+            tvResult.text = "Error: Invalid number format."
+        } catch (error: Exception) {
+            tvResult.text = "An unexpected error occurred."
+            println("Unexpected error: $error")
+        }
+    }
+
+    @SuppressLint("SetTextI18n")
+    private fun divide(firstNumber: String, secondNumber: String) {
+        try {
+            val result = (firstNumber.toInt() / secondNumber.toInt()).toString()
+            tvResult.text = result
+        } catch (error: NumberFormatException) {
+            tvResult.text = "Error: Invalid number format."
+        } catch (error: Exception) {
+            tvResult.text = "An unexpected error occurred."
+            println("Unexpected error: $error")
+        }
     }
 }
