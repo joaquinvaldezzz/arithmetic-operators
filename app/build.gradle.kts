@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.aarondave.arithmeticoperators"
+    namespace = "com.valdez.arithmeticoperators"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.aarondave.arithmeticoperators"
+        applicationId = "com.valdez.arithmeticoperators"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
