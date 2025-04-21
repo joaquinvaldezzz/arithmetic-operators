@@ -1,68 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    android:orientation="vertical"
-    android:paddingHorizontal="16dp"
-    android:paddingTop="16dp">
+    android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/et_first_number"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Enter a number"
-        android:importantForAutofill="no"
-        android:inputType="number"
-        android:minHeight="48dp"
-        tools:ignore="HardcodedText" />
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="16dp">
 
-    <EditText
-        android:id="@+id/et_second_number"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Enter another number"
-        android:importantForAutofill="no"
-        android:inputType="number"
-        android:minHeight="48dp"
-        tools:ignore="HardcodedText" />
+        <EditText
+            android:id="@+id/et_first_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter a number"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:minHeight="48dp"
+            tools:ignore="HardcodedText" />
 
-    <TextView
-        android:id="@+id/tv_result"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Result"
-        android:textAlignment="center"
-        tools:ignore="HardcodedText" />
+        <EditText
+            android:id="@+id/et_second_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter another number"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:minHeight="48dp"
+            tools:ignore="HardcodedText" />
 
-    <Button
-        android:id="@+id/btn_add"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Add"
-        tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Result"
+            android:textAlignment="center"
+            tools:ignore="HardcodedText" />
 
-    <Button
-        android:id="@+id/btn_subtract"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Subtract"
-        tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            tools:ignore="HardcodedText" />
 
-    <Button
-        android:id="@+id/btn_multiply"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Multiply"
-        tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/btn_subtract"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subtract"
+            tools:ignore="HardcodedText" />
 
-    <Button
-        android:id="@+id/btn_divide"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Divide"
-        tools:ignore="HardcodedText" />
-</LinearLayout>
+        <Button
+            android:id="@+id/btn_multiply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Multiply"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_divide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Divide"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+</ScrollView>
