@@ -1,4 +1,4 @@
-package com.aarondave.arithmeticoperators.ui.theme
+package com.valdez.arithmeticoperators.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
