@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">Arithmetic Operators</string>
+    <string name="app_name">Ordering System</string>
+    <string name="first_food">Fried Chicken</string>
+    <string name="second_food">Chicken Burger</string>
+    <string name="third_food">Buffalo Chicken Wings</string>
+    <string name="fourth_food">Chicken Nuggets</string>
+    <string name="fifth_food">Fried Potatoes</string>
+    <string name="sixth_food">Creamy Carbonara</string>
+    <string name="quantity_hint">Enter quantity</string>
 </resources>
