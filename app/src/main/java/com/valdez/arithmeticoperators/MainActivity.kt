@@ -52,7 +52,7 @@ class MainActivity : ComponentActivity() {
         try {
             val result = (firstNumber.toDouble() + secondNumber.toDouble()).toString()
             tvResult.text = result
-        } catch (error: NumberFormatException) {
+        } catch (_: NumberFormatException) {
             tvResult.text = "Error: Invalid number format."
         } catch (error: Exception) {
             tvResult.text = "An unexpected error occurred."
@@ -65,7 +65,7 @@ class MainActivity : ComponentActivity() {
         try {
             val result = (firstNumber.toDouble() - secondNumber.toDouble()).toString()
             tvResult.text = result
-        } catch (error: NumberFormatException) {
+        } catch (_: NumberFormatException) {
             tvResult.text = "Error: Invalid number format."
         } catch (error: Exception) {
             tvResult.text = "An unexpected error occurred."
@@ -78,7 +78,7 @@ class MainActivity : ComponentActivity() {
         try {
             val result = (firstNumber.toDouble() * secondNumber.toDouble()).toString()
             tvResult.text = result
-        } catch (error: NumberFormatException) {
+        } catch (_: NumberFormatException) {
             tvResult.text = "Error: Invalid number format."
         } catch (error: Exception) {
             tvResult.text = "An unexpected error occurred."
@@ -91,7 +91,7 @@ class MainActivity : ComponentActivity() {
         try {
             val result = (firstNumber.toDouble() / secondNumber.toDouble()).toString()
             tvResult.text = result
-        } catch (error: NumberFormatException) {
+        } catch (_: NumberFormatException) {
             tvResult.text = "Error: Invalid number format."
         } catch (error: Exception) {
             tvResult.text = "An unexpected error occurred."
