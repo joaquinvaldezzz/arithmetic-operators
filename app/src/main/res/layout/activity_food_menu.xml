@@ -66,6 +66,7 @@
                 </LinearLayout>
 
                 <EditText
+                    android:id="@+id/et_quantity_fried_chicken"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/quantity_hint"
@@ -119,6 +120,7 @@
                 </LinearLayout>
 
                 <EditText
+                    android:id="@+id/et_quantity_chicken_burger"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/quantity_hint"
@@ -173,6 +175,7 @@
                 </LinearLayout>
 
                 <EditText
+                    android:id="@+id/et_quantity_buffalo_chicken_wings"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/quantity_hint"
@@ -225,6 +228,7 @@
                 </LinearLayout>
 
                 <EditText
+                    android:id="@+id/et_quantity_chicken_nuggets"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/quantity_hint"
@@ -279,6 +283,7 @@
                 </LinearLayout>
 
                 <EditText
+                    android:id="@+id/et_quantity_fried_potatoes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/quantity_hint"
@@ -331,6 +336,7 @@
                 </LinearLayout>
 
                 <EditText
+                    android:id="@+id/et_quantity_creamy_carbonara"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/quantity_hint"
@@ -338,6 +344,125 @@
                     android:inputType="number"
                     android:minHeight="48dp"
                     android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="124dp"
+                android:layout_height="124dp"
+                android:contentDescription="@string/first_drink"
+                android:scaleType="centerCrop"
+                android:src="@drawable/iv_milk_tea" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="@string/first_drink"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Small"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:text="₱120.00"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:hint="@string/quantity_hint"
+                        android:importantForAutofill="no"
+                        android:inputType="number"
+                        android:minHeight="48dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Medium"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:text="₱140.00"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:hint="@string/quantity_hint"
+                        android:importantForAutofill="no"
+                        android:inputType="number"
+                        android:minHeight="48dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Large"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:text="₱160.00"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:hint="@string/quantity_hint"
+                        android:importantForAutofill="no"
+                        android:inputType="number"
+                        android:minHeight="48dp" />
+                </LinearLayout>
+
             </LinearLayout>
         </LinearLayout>
 
@@ -347,103 +472,115 @@
             android:layout_marginTop="16dp"
             android:orientation="horizontal">
 
+            <ImageView
+                android:layout_width="124dp"
+                android:layout_height="124dp"
+                android:contentDescription="@string/second_drink"
+                android:scaleType="centerCrop"
+                android:src="@drawable/iv_matcha_latte" />
+
             <LinearLayout
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
                 android:orientation="vertical">
 
-                <ImageView
+
+                <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="124dp"
-                    android:contentDescription="@string/first_drink"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/iv_milk_tea" />
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="@string/second_drink"
+                    android:textColor="@color/black" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:orientation="vertical">
+                    android:orientation="horizontal">
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="₱149.00"
-                        android:textAlignment="center"
-                        android:textColor="@color/black"
-                        android:textSize="16sp"
+                        android:text="Small"
                         tools:ignore="HardcodedText" />
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="6dp"
-                        android:text="@string/first_drink"
-                        android:textAlignment="center"
+                        android:layout_marginStart="4dp"
+                        android:text="₱120.00"
                         android:textColor="@color/black" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:hint="@string/quantity_hint"
+                        android:importantForAutofill="no"
+                        android:inputType="number"
+                        android:minHeight="48dp" />
                 </LinearLayout>
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/quantity_hint"
-                    android:importantForAutofill="no"
-                    android:inputType="number"
-                    android:minHeight="48dp"
-                    android:textAlignment="center" />
-            </LinearLayout>
-
-            <Space
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.10" />
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="124dp"
-                    android:contentDescription="@string/second_drink"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/iv_matcha_latte" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:orientation="vertical">
+                    android:orientation="horizontal">
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="₱99.00"
-                        android:textAlignment="center"
-                        android:textColor="@color/black"
-                        android:textSize="16sp"
+                        android:text="Medium"
                         tools:ignore="HardcodedText" />
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="6dp"
-                        android:text="@string/second_drink"
-                        android:textAlignment="center"
+                        android:layout_marginStart="4dp"
+                        android:text="₱140.00"
                         android:textColor="@color/black" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:hint="@string/quantity_hint"
+                        android:importantForAutofill="no"
+                        android:inputType="number"
+                        android:minHeight="48dp" />
                 </LinearLayout>
 
-                <EditText
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/quantity_hint"
-                    android:importantForAutofill="no"
-                    android:inputType="number"
-                    android:minHeight="48dp"
-                    android:textAlignment="center" />
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Large"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:text="₱160.00"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:hint="@string/quantity_hint"
+                        android:importantForAutofill="no"
+                        android:inputType="number"
+                        android:minHeight="48dp" />
+                </LinearLayout>
+
             </LinearLayout>
         </LinearLayout>
 
@@ -453,105 +590,118 @@
             android:layout_marginTop="16dp"
             android:orientation="horizontal">
 
+            <ImageView
+                android:layout_width="124dp"
+                android:layout_height="124dp"
+                android:contentDescription="@string/third_drink"
+                android:scaleType="centerCrop"
+                android:src="@drawable/iv_lychee_drink" />
+
             <LinearLayout
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
                 android:orientation="vertical">
 
-                <ImageView
+
+                <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="124dp"
-                    android:contentDescription="@string/third_drink"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/iv_lychee_drink" />
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="@string/third_drink"
+                    android:textColor="@color/black" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:orientation="vertical">
+                    android:orientation="horizontal">
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="₱149.00"
-                        android:textAlignment="center"
-                        android:textColor="@color/black"
-                        android:textSize="16sp"
+                        android:text="Small"
                         tools:ignore="HardcodedText" />
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="6dp"
-                        android:text="@string/third_drink"
-                        android:textAlignment="center"
+                        android:layout_marginStart="4dp"
+                        android:text="₱120.00"
                         android:textColor="@color/black" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:hint="@string/quantity_hint"
+                        android:importantForAutofill="no"
+                        android:inputType="number"
+                        android:minHeight="48dp" />
                 </LinearLayout>
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/quantity_hint"
-                    android:importantForAutofill="no"
-                    android:inputType="number"
-                    android:minHeight="48dp"
-                    android:textAlignment="center" />
-            </LinearLayout>
-
-            <Space
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.10" />
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="124dp"
-                    android:contentDescription="@string/fourth_drink"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/iv_iced_coffee" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:orientation="vertical">
+                    android:orientation="horizontal">
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="₱99.00"
-                        android:textAlignment="center"
-                        android:textColor="@color/black"
-                        android:textSize="16sp"
+                        android:text="Medium"
                         tools:ignore="HardcodedText" />
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="6dp"
-                        android:text="@string/fourth_drink"
-                        android:textAlignment="center"
+                        android:layout_marginStart="4dp"
+                        android:text="₱140.00"
                         android:textColor="@color/black" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:hint="@string/quantity_hint"
+                        android:importantForAutofill="no"
+                        android:inputType="number"
+                        android:minHeight="48dp" />
                 </LinearLayout>
 
-                <EditText
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/quantity_hint"
-                    android:importantForAutofill="no"
-                    android:inputType="number"
-                    android:minHeight="48dp"
-                    android:textAlignment="center" />
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Large"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:text="₱160.00"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:hint="@string/quantity_hint"
+                        android:importantForAutofill="no"
+                        android:inputType="number"
+                        android:minHeight="48dp" />
+                </LinearLayout>
+
             </LinearLayout>
         </LinearLayout>
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -570,6 +720,7 @@
                 tools:ignore="HardcodedText" />
 
             <TextView
+                android:id="@+id/tv_total_amount"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -581,6 +732,7 @@
         </LinearLayout>
 
         <Button
+            android:id="@+id/btn_calculate_total"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Calculate total"
