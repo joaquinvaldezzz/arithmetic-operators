@@ -6,5 +6,9 @@
     <string name="fourth_food">Chicken Nuggets</string>
     <string name="fifth_food">Fried Potatoes</string>
     <string name="sixth_food">Creamy Carbonara</string>
+    <string name="first_drink">Milk Tea</string>
+    <string name="second_drink">Matcha Latte</string>
+    <string name="third_drink">Lychee Drink</string>
+    <string name="fourth_drink">Iced Coffee</string>
     <string name="quantity_hint">Enter quantity</string>
 </resources>
